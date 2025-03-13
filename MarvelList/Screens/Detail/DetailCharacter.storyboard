@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,7 +18,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IRi-oz-rbG">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MTJ-p7-eAr">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MTJ-p7-eAr">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="400"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Eb-75-szU">
@@ -32,7 +31,7 @@
                                                         </constraints>
                                                     </imageView>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="Leu-Ih-xkW" firstAttribute="top" secondItem="2Eb-75-szU" secondAttribute="top" id="bU5-LD-zVd"/>
                                                     <constraint firstItem="Leu-Ih-xkW" firstAttribute="leading" secondItem="2Eb-75-szU" secondAttribute="leading" id="fxD-PC-LVS"/>
@@ -41,8 +40,10 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </stackView>
                                 </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="MTJ-p7-eAr" firstAttribute="centerX" secondItem="IRi-oz-rbG" secondAttribute="centerX" id="9rS-4x-I1q"/>
                                     <constraint firstItem="MTJ-p7-eAr" firstAttribute="leading" secondItem="IRi-oz-rbG" secondAttribute="leading" id="c7Z-ig-8Ln"/>
@@ -53,7 +54,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0Ah-l9-65U"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="IRi-oz-rbG" secondAttribute="bottom" id="Aze-88-hbx"/>
                             <constraint firstAttribute="trailing" secondItem="IRi-oz-rbG" secondAttribute="trailing" id="dH2-ng-9K0"/>
@@ -74,9 +75,4 @@
             <point key="canvasLocation" x="78.625954198473281" y="-2.1126760563380285"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>

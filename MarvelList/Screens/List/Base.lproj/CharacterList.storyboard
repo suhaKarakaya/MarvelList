@@ -4,30 +4,29 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Character List View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="CharacterListViewController" customModule="MarvelList" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CharacterListViewController" id="BYZ-38-t0r" customClass="CharacterListViewController" customModule="MarvelList" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="DMq-kr-3nY">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DMq-kr-3nY" secondAttribute="trailing" id="08Q-gQ-5TS"/>
                             <constraint firstItem="DMq-kr-3nY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cTS-nP-h9X"/>
-                            <constraint firstItem="DMq-kr-3nY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="n0o-U1-fjJ"/>
+                            <constraint firstItem="DMq-kr-3nY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ewP-mX-7XF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DMq-kr-3nY" secondAttribute="bottom" id="oVw-Gb-i4X"/>
                         </constraints>
                     </view>
@@ -38,12 +37,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-45" y="-63"/>
+            <point key="canvasLocation" x="-45.038167938931295" y="-63.380281690140848"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5xG-xi-N1j">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="haO-ox-Ebw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController storyboardIdentifier="CharacterListNavigationControllerID" id="h5F-4t-VmN" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="S43-lI-ZvY">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -53,13 +51,9 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="JK9-aI-uZX"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="haO-ox-Ebw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1019" y="-63"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>

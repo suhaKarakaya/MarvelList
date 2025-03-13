@@ -32,11 +32,29 @@
 		029157F02D821DE100A31CE7 /* splash_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 029157EF2D821DE100A31CE7 /* splash_animation.json */; };
 		029157F32D821EA400A31CE7 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029157F22D821EA400A31CE7 /* SplashViewController.swift */; };
 		029157F52D821F4500A31CE7 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 029157F42D821F4500A31CE7 /* Splash.storyboard */; };
-		02CD221F2D8182DB009A8808 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CD221E2D8182DB009A8808 /* UIView+Extension.swift */; };
+		029157FD2D82285400A31CE7 /* CharacterListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029157FC2D82285400A31CE7 /* CharacterListViewControllerTests.swift */; };
+		029158042D822FDF00A31CE7 /* DetailCharacterViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029158032D822FDF00A31CE7 /* DetailCharacterViewControllerTest.swift */; };
+		029158082D82484B00A31CE7 /* star_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 029158072D82484B00A31CE7 /* star_animation.json */; };
+		0291580A2D824B1000A31CE7 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029158092D824B1000A31CE7 /* UserDefaultsManager.swift */; };
+		0291580D2D82563600A31CE7 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0291580C2D82563600A31CE7 /* FirebaseAnalytics */; };
+		0291580F2D82563600A31CE7 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 0291580E2D82563600A31CE7 /* FirebaseAnalyticsOnDeviceConversion */; };
+		029158112D82563600A31CE7 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 029158102D82563600A31CE7 /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		029158132D82569100A31CE7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 029158122D82569100A31CE7 /* GoogleService-Info.plist */; };
+		029158172D825C6600A31CE7 /* BaseParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029158162D825C6600A31CE7 /* BaseParams.swift */; };
 		02E340792D81955C008E5928 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 02E340782D81955C008E5928 /* Lottie */; };
 		02E340822D81A0D0008E5928 /* DetailCharacter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02E340812D81A0D0008E5928 /* DetailCharacter.storyboard */; };
 		02E340842D81A0DF008E5928 /* DetailCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E340832D81A0DF008E5928 /* DetailCharacterViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		029157FE2D82285400A31CE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0218E8362D80C89500EF4583 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0218E83D2D80C89500EF4583;
+			remoteInfo = MarvelList;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		0218E8672D80C9B800EF4583 /* Embed Frameworks */ = {
@@ -76,7 +94,13 @@
 		029157EF2D821DE100A31CE7 /* splash_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = splash_animation.json; sourceTree = "<group>"; };
 		029157F22D821EA400A31CE7 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		029157F42D821F4500A31CE7 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
-		02CD221E2D8182DB009A8808 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		029157FA2D82285300A31CE7 /* MarvelListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		029157FC2D82285400A31CE7 /* CharacterListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewControllerTests.swift; sourceTree = "<group>"; };
+		029158032D822FDF00A31CE7 /* DetailCharacterViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCharacterViewControllerTest.swift; sourceTree = "<group>"; };
+		029158072D82484B00A31CE7 /* star_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = star_animation.json; sourceTree = "<group>"; };
+		029158092D824B1000A31CE7 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		029158122D82569100A31CE7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		029158162D825C6600A31CE7 /* BaseParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseParams.swift; sourceTree = "<group>"; };
 		02E340812D81A0D0008E5928 /* DetailCharacter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailCharacter.storyboard; sourceTree = "<group>"; };
 		02E340832D81A0DF008E5928 /* DetailCharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCharacterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,9 +111,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				0218E8832D80F68000EF4583 /* RxAlamofire in Frameworks */,
+				0291580F2D82563600A31CE7 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 				0218E86A2D80C9D300EF4583 /* RxCocoa in Frameworks */,
 				0218E8622D80C91600EF4583 /* Alamofire in Frameworks */,
+				029158112D82563600A31CE7 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				0291580D2D82563600A31CE7 /* FirebaseAnalytics in Frameworks */,
 				02E340792D81955C008E5928 /* Lottie in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		029157F72D82285300A31CE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +136,9 @@
 				0218E8772D80D8D100EF4583 /* keys.plist */,
 				0218E8402D80C89500EF4583 /* MarvelList */,
 				029157EF2D821DE100A31CE7 /* splash_animation.json */,
+				029158072D82484B00A31CE7 /* star_animation.json */,
+				029158122D82569100A31CE7 /* GoogleService-Info.plist */,
+				029157FB2D82285400A31CE7 /* MarvelListTests */,
 				0218E83F2D80C89500EF4583 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -110,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				0218E83E2D80C89500EF4583 /* MarvelList.app */,
+				029157FA2D82285300A31CE7 /* MarvelListTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,8 +174,7 @@
 			children = (
 				0218E8642D80C92D00EF4583 /* NetworkManager.swift */,
 				0218E86B2D80CA3D00EF4583 /* MarvelService.swift */,
-				0218E8732D80D82400EF4583 /* ListParams.swift */,
-				027979E02D81B06D006C2EEA /* DetailParams.swift */,
+				029158162D825C6600A31CE7 /* BaseParams.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -146,7 +183,6 @@
 			isa = PBXGroup;
 			children = (
 				0218E86E2D80CBCA00EF4583 /* String+Extension.swift */,
-				02CD221E2D8182DB009A8808 /* UIView+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -155,8 +191,6 @@
 			isa = PBXGroup;
 			children = (
 				0218E8712D80CBF200EF4583 /* MarvelResponse.swift */,
-				0218E8792D80E5B000EF4583 /* CharactersRequest.swift */,
-				027979E22D81B0F5006C2EEA /* ComicsRequest.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -174,6 +208,7 @@
 		0218E87C2D80F2B100EF4583 /* List */ = {
 			isa = PBXGroup;
 			children = (
+				029158182D825CA300A31CE7 /* Request */,
 				0218E87E2D80F2F700EF4583 /* cell */,
 				0218E8452D80C89500EF4583 /* CharacterListViewController.swift */,
 				0218E8472D80C89500EF4583 /* CharacterList.storyboard */,
@@ -186,6 +221,7 @@
 			children = (
 				0218E8752D80D8A000EF4583 /* ApiKeys.swift */,
 				0218E8842D817F1300EF4583 /* LoadingIndicator.swift */,
+				029158092D824B1000A31CE7 /* UserDefaultsManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -208,9 +244,37 @@
 			path = Splash;
 			sourceTree = "<group>";
 		};
+		029157FB2D82285400A31CE7 /* MarvelListTests */ = {
+			isa = PBXGroup;
+			children = (
+				029157FC2D82285400A31CE7 /* CharacterListViewControllerTests.swift */,
+				029158032D822FDF00A31CE7 /* DetailCharacterViewControllerTest.swift */,
+			);
+			path = MarvelListTests;
+			sourceTree = "<group>";
+		};
+		029158182D825CA300A31CE7 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				0218E8732D80D82400EF4583 /* ListParams.swift */,
+				0218E8792D80E5B000EF4583 /* CharactersRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		029158192D825CBC00A31CE7 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				027979E22D81B0F5006C2EEA /* ComicsRequest.swift */,
+				027979E02D81B06D006C2EEA /* DetailParams.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
 		02E340802D819EAF008E5928 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				029158192D825CBC00A31CE7 /* Request */,
 				02E340812D81A0D0008E5928 /* DetailCharacter.storyboard */,
 				02E340832D81A0DF008E5928 /* DetailCharacterViewController.swift */,
 			);
@@ -239,10 +303,31 @@
 				0218E8692D80C9D300EF4583 /* RxCocoa */,
 				0218E8822D80F68000EF4583 /* RxAlamofire */,
 				02E340782D81955C008E5928 /* Lottie */,
+				0291580C2D82563600A31CE7 /* FirebaseAnalytics */,
+				0291580E2D82563600A31CE7 /* FirebaseAnalyticsOnDeviceConversion */,
+				029158102D82563600A31CE7 /* FirebaseAnalyticsWithoutAdIdSupport */,
 			);
 			productName = MarvelList;
 			productReference = 0218E83E2D80C89500EF4583 /* MarvelList.app */;
 			productType = "com.apple.product-type.application";
+		};
+		029157F92D82285300A31CE7 /* MarvelListTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 029158022D82285400A31CE7 /* Build configuration list for PBXNativeTarget "MarvelListTests" */;
+			buildPhases = (
+				029157F62D82285300A31CE7 /* Sources */,
+				029157F72D82285300A31CE7 /* Frameworks */,
+				029157F82D82285300A31CE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				029157FF2D82285400A31CE7 /* PBXTargetDependency */,
+			);
+			name = MarvelListTests;
+			productName = MarvelListTests;
+			productReference = 029157FA2D82285300A31CE7 /* MarvelListTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -256,6 +341,10 @@
 				TargetAttributes = {
 					0218E83D2D80C89500EF4583 = {
 						CreatedOnToolsVersion = 15.4;
+					};
+					029157F92D82285300A31CE7 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 0218E83D2D80C89500EF4583;
 					};
 				};
 			};
@@ -273,12 +362,14 @@
 				0218E8682D80C9D300EF4583 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				0218E8812D80F68000EF4583 /* XCRemoteSwiftPackageReference "RxAlamofire" */,
 				02E340772D81955C008E5928 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+				0291580B2D82563600A31CE7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 0218E83F2D80C89500EF4583 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				0218E83D2D80C89500EF4583 /* MarvelList */,
+				029157F92D82285300A31CE7 /* MarvelListTests */,
 			);
 		};
 /* End PBXProject section */
@@ -293,9 +384,18 @@
 				0218E84B2D80C89600EF4583 /* Assets.xcassets in Resources */,
 				029157F52D821F4500A31CE7 /* Splash.storyboard in Resources */,
 				02E340822D81A0D0008E5928 /* DetailCharacter.storyboard in Resources */,
+				029158082D82484B00A31CE7 /* star_animation.json in Resources */,
 				029157ED2D82154E00A31CE7 /* CharTableViewCell.xib in Resources */,
+				029158132D82569100A31CE7 /* GoogleService-Info.plist in Resources */,
 				0218E84E2D80C89600EF4583 /* Base in Resources */,
 				0218E8492D80C89500EF4583 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		029157F82D82285300A31CE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,7 +408,7 @@
 			files = (
 				0218E8852D817F1300EF4583 /* LoadingIndicator.swift in Sources */,
 				027979E12D81B06D006C2EEA /* DetailParams.swift in Sources */,
-				02CD221F2D8182DB009A8808 /* UIView+Extension.swift in Sources */,
+				0291580A2D824B1000A31CE7 /* UserDefaultsManager.swift in Sources */,
 				029157F32D821EA400A31CE7 /* SplashViewController.swift in Sources */,
 				0218E8652D80C92D00EF4583 /* NetworkManager.swift in Sources */,
 				0218E8742D80D82400EF4583 /* ListParams.swift in Sources */,
@@ -320,13 +420,31 @@
 				0218E8422D80C89500EF4583 /* AppDelegate.swift in Sources */,
 				0218E86C2D80CA3D00EF4583 /* MarvelService.swift in Sources */,
 				0218E8722D80CBF200EF4583 /* MarvelResponse.swift in Sources */,
+				029158172D825C6600A31CE7 /* BaseParams.swift in Sources */,
 				0218E86F2D80CBCA00EF4583 /* String+Extension.swift in Sources */,
 				0218E8442D80C89500EF4583 /* SceneDelegate.swift in Sources */,
 				0218E87A2D80E5B000EF4583 /* CharactersRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		029157F62D82285300A31CE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				029157FD2D82285400A31CE7 /* CharacterListViewControllerTests.swift in Sources */,
+				029158042D822FDF00A31CE7 /* DetailCharacterViewControllerTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		029157FF2D82285400A31CE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0218E83D2D80C89500EF4583 /* MarvelList */;
+			targetProxy = 029157FE2D82285400A31CE7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0218E8472D80C89500EF4583 /* CharacterList.storyboard */ = {
@@ -525,6 +643,40 @@
 			};
 			name = Release;
 		};
+		029158002D82285400A31CE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suha.MarvelListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarvelList.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MarvelList";
+			};
+			name = Debug;
+		};
+		029158012D82285400A31CE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suha.MarvelListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarvelList.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MarvelList";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -542,6 +694,15 @@
 			buildConfigurations = (
 				0218E8532D80C89600EF4583 /* Debug */,
 				0218E8542D80C89600EF4583 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		029158022D82285400A31CE7 /* Build configuration list for PBXNativeTarget "MarvelListTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				029158002D82285400A31CE7 /* Debug */,
+				029158012D82285400A31CE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -573,6 +734,14 @@
 				version = 6.1.0;
 			};
 		};
+		0291580B2D82563600A31CE7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.9.0;
+			};
+		};
 		02E340772D81955C008E5928 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
@@ -598,6 +767,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0218E8812D80F68000EF4583 /* XCRemoteSwiftPackageReference "RxAlamofire" */;
 			productName = RxAlamofire;
+		};
+		0291580C2D82563600A31CE7 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0291580B2D82563600A31CE7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		0291580E2D82563600A31CE7 /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0291580B2D82563600A31CE7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		029158102D82563600A31CE7 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0291580B2D82563600A31CE7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
 		};
 		02E340782D81955C008E5928 /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;

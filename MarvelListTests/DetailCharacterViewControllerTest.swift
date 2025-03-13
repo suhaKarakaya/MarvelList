@@ -6,30 +6,81 @@
 //
 
 import XCTest
+import RxSwift
+import RxCocoa
+@testable import MarvelList
 
-final class DetailCharacterViewControllerTest: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+class DetailCharacterViewControllerTests: XCTestCase {
+    
+    var viewController: DetailCharacterViewController!
+    var mockMarvelService: MockMarvelService!
+    var window: UIWindow!
+    
+    override func setUp() {
+        super.setUp()
+        window = UIWindow()
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        viewController = storyboard.instantiateViewController(withIdentifier: "DetailCharacterViewController") as? DetailCharacterViewController
+        mockMarvelService = MockMarvelService()
+        viewController.marvelService = mockMarvelService
+        window.addSubview(viewController.view)
+        RunLoop.current.run(until: Date())
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    override func tearDown() {
+        viewController = nil
+        mockMarvelService = nil
+        window = nil
+        super.tearDown()
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    
+    func testViewDidLoad_LoadsCharacterData() {
+        // Arrange
+        let character = ResultCharacter(
+            id: 1,
+            name: "Spider-Man",
+            description: "Friendly neighborhood Spider-Man.",
+            thumbnail: nil
+        )
+        viewController.segueData = character
+        
+        // Act
+        viewController.loadViewIfNeeded()
+        
+        // Assert
+        XCTAssertEqual(viewController.stackView.arrangedSubviews.count, 2) // Name and Description
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testViewDidLoad_LoadsComics() {
+        // Arrange
+        let character = ResultCharacter(
+            id: 1,
+            name: "Spider-Man",
+            description: "Friendly neighborhood Spider-Man.",
+            thumbnail: nil
+        )
+        viewController.segueData = character
+        
+        // Act
+        viewController.loadViewIfNeeded()
+        
+        // Assert
+        XCTAssertEqual(viewController.stackView.arrangedSubviews.count, 3) // Name, Description, and Comic
     }
-
+    
+    func testButtonTapped() {
+        // Arrange
+        let character = ResultCharacter(
+            id: 1,
+            name: "Spider-Man",
+            description: "Friendly neighborhood Spider-Man.",
+            thumbnail: nil
+        )
+        viewController.segueData = character
+        
+        // Act
+        viewController.loadViewIfNeeded()
+        viewController.buttonTapped()
+        
+    }
 }

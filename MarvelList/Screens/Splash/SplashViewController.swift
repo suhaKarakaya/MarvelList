@@ -27,8 +27,6 @@ class SplashViewController: UIViewController {
             self?.navigateToCharacterList()
         }
     }
-
-
     
     private func navigateToCharacterList() {
         let storyboard = UIStoryboard(name: "CharacterList", bundle: nil)

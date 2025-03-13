@@ -13,7 +13,7 @@ import UIKit
 protocol MarvelServiceProtocol {
     func fetchCharacters(_ req: CharactersRequest, overlayTarget: UIView?) -> Observable<MarvelBaseResponse<ResultCharacter>>
     func fetchComics(_ req: ComicsRequest, overlayTarget: UIView?) -> Observable<MarvelBaseResponse<ResultComic>>
-    func loadImage(from url: String) -> Observable<UIImage>
+    func loadImage(from url: String) -> Observable<UIImage?>
 }
 
 
@@ -37,7 +37,7 @@ class MarvelService: MarvelServiceProtocol {
         
     }
     
-    func loadImage(from url: String) -> Observable<UIImage> {
+    func loadImage(from url: String) -> Observable<UIImage?> {
             guard let imageURL = URL(string: url) else {
                 return Observable.just(unknownImage ?? UIImage())
             }
